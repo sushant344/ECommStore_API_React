@@ -1,0 +1,47 @@
+.css-kn46u7{
+    animation: rotate 1s infinite ease-in-out;
+}
+
+input:placeholder-shown{
+    text-transform: uppercase !important;
+}
+textarea:placeholder-shown{
+    text-transform: uppercase !important;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.loaderClass{
+    font-weight: 400;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.footer-social--icons div:nth-child(1):hover{
+    background-color: #5b1cdd;
+    border-color: #5b1cdd;
+    transform: scale(0.9);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+.footer-social--icons div:nth-child(2):hover{
+    background-color: rgb(255, 0, 119);
+    border-color: rgb(255, 0, 119);
+    transform: scale(0.9);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+.footer-social--icons div:nth-child(3):hover{
+    background-color: red;
+    border-color: red;
+    transform: scale(0.9);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
