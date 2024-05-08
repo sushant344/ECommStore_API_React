@@ -18,7 +18,6 @@ function SingleProduct() {
   const { getsingleProduct, isSingleLoading, singleProduct } = useProductContext();
 
   const {
-    id: ID,
     name,
     company,
     price,
@@ -31,7 +30,7 @@ function SingleProduct() {
 
   useEffect(()=>{
     getsingleProduct(`${API}?id=${id}`);
-  },[])
+  },[id])
 
   if (isSingleLoading) {
     return <h2 className='loaderClass' > Loading... </h2>;
