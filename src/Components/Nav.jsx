@@ -10,8 +10,8 @@ const Nav = () => {
     const {total_item} = useCartContext();
   return (
   <Navbar>
-    <div className={menuIcon ? "navbar active" : "navbar"}>
-        <ul className="navbar-lists" style={{display: menuIcon ? "flex" : "none"}}>
+    <div className={menuIcon ? "navbar active" : "navbar"} id="menubarid">
+        <ul className="navbar-lists" style={{display: menuIcon ? "flex" : null}}>
             <li>
                 <NavLink to="/" className="navbar-link home-link" onClick={()=> setMenuIcon(false)}>
                     Home
@@ -163,7 +163,7 @@ const Navbar = styled.nav`
         left: 0;
         background-color: #fff;
 
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         flex-direction: column;
